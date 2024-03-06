@@ -39,6 +39,7 @@ function updateLanguage(language) {
      let main = document.querySelector('.main')
      let iconElement = document.createElement('i');
 
+     if (!checkTheme) {  localStorage.setItem('theme', '') }
  
      if (checkTheme === 'dark') {
          iconElement.className = 'bx bx-brightness';
@@ -61,7 +62,7 @@ function updateLanguage(language) {
      themeElement.addEventListener('click', function() {
      const newTheme = localStorage.getItem('theme')
 
-        if (!newTheme) {  localStorage.setItem('theme', '') }
+     
        
          if (newTheme==='dark') {
                     localStorage.setItem('theme', '') 
