@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,200;0,400;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: #11141a;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    z-index: 100;  
+}
+.logo {
+    position: absolute;
+    top: 5;
+    left: 20;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    font-style: italic;
+    background-image: linear-gradient(45deg, #4f1919, #ff3333);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+nav a:hover,
+nav a.active {
+    color: #ff3333;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.about-text{
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.2em;
+    font-weight: 200;
+    line-height: 1.5;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    
+}
+
+.text{
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.2em;
+    font-weight: 200;
+    line-height: 1.5;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    
+
+}
+
+.title{
+    
+    margin-top: 50px;
+    text-align: baseline;
+}
+
+.title-first{
+    font-size: 1.4em;
+    font-weight: 200;
+}
+ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+li{
+    margin-bottom: 10px;
+    background-clip: text;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    
+}
+.uldiv{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+
+.cardsDIV{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    padding-bottom: 20px;
+  
+}
+.cards {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+
+}
+
+.card {
+    background: #005e9b;
+    display: flex;
+    width: 360px;
+    height: 220px;
+    border: 1px solid gray;
+    }
+
+    .card:hover {
+        transform: scale(1.01);
+    }
+
+.photo{
+    border-radius: 100%;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    padding-left: 10px;
+}
+
+.card-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1.5;
+  
+}
+
+
+.card-right{
+    flex: 3;
+    display: flex;
+    justify-content: end;
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+    
+}
+
+.inner-right{
+    min-width: 180px;
+}
+.card-name{
+    font-size: 18px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.card-job{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #5bcbf0;
+}
+
+.card-mobile{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.addresses{
+   
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    color:#fff;
+}
+
+
+.address{
+    
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 220px;
+    border: 1px solid gray;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 40px;
+
+}
+
+.address.factory{
+    background-image: url('../factory.jpg');
+    background-size: cover; 
+}
+
+.address.office{
+    background-image: url('../factory.jpg');
+    background-size: cover; 
+}
+
+.up{
+    margin-bottom: 15px;
+    font-size: 25px;
+
+}
+
+.down{
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  flex-direction: column;
+  align-items: end;
+}
+
+
+.theme{
+    width: 28px;
+    font-family: "Arial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    position: absolute;
+    top:15px;
+    right:80px;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.main{
+    background-color: #000;
+    color: #fff;
+}
+
+.main.dark{
+    color:#000;
+    background-color: #fff; 
+}
+
+.flags{ 
+    position: absolute;
+    top:20px;
+    right:50px;
+    width: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.flag{
+    width: 25px;
+    object-fit: cover;
+    cursor: pointer;    
+}
+
+.footerDIV {
+    height: 80px;
+    background-color: gray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+footer{
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 0.8em;
+}
+
+
+
+@media only screen and (max-width: 1200px) {  
+    header {
+        padding: 10px 300px;        
+        justify-content: space-between;
+        align-items: center;       
+    }
+    .logo {
+        font-size: 26px;
+      
+    }
+
+    .theme{
+        top:10px;
+        right:80px;
+        
+    }
+    .flags{ 
+        top:15px;
+        right:50px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+
+}
+@media only screen and (max-width: 768px) {  
+    header {
+        padding: 10px 300px;        
+        justify-content: space-between;
+        align-items: center; 
+        
+    }
+    .logo {
+        font-size: 26px;
+      
+    }
+
+    .theme{
+        top:50px;
+        left:20px;
+        
+    }
+    .flags{ 
+        top:55px;
+        left:60px;
+    }
+    
+    .title-first{
+        font-size: 0.8em;
+        font-weight: 400;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+    .addresses{
+        flex-direction: column;
+        align-items: center;
+    }
+    li{
+
+        font-size: 0.8em;        
+    }
+  }
+
+@media only screen and (max-width: 400px) {  
+    header {
+        padding: 10px 220px;        
+        justify-content: space-between;
+        align-items: center; 
+        
+    }
+    .logo {
+        font-size: 22px;
+      
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .addresses{
+        flex-direction: column;
+        align-items: center;
+    }
+    .title-first{
+        font-size: 0.7em;
+        font-weight: 400;
+    }
+    li{
+
+        font-size: 0.7em;        
+    }
+  }
