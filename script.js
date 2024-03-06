@@ -60,6 +60,8 @@ function updateLanguage(language) {
  
      themeElement.addEventListener('click', function() {
      const newTheme = localStorage.getItem('theme')
+
+        if (!newTheme) {  localStorage.setItem('theme', '') }
        
          if (newTheme==='dark') {
                     localStorage.setItem('theme', '') 
@@ -70,7 +72,7 @@ function updateLanguage(language) {
                      });       
  
  };
-         if (newTheme==='') {
+         if (newTheme==='' || !newTheme) {
                  localStorage.setItem('theme', 'dark') 
                 main.classList.remove('dark')  
                 const oddSections = document.querySelectorAll('section:nth-child(odd)');
