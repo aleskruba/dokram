@@ -56,7 +56,7 @@ section {
 }
 
 .about-text{
-    text-align: justify;
+    text-align: center;
     font-family: "Poppins", sans-serif;
     font-size: 0.2em;
     font-weight: 200;
@@ -355,6 +355,9 @@ footer{
 
         font-size: 0.8em;        
     }
+    .about-text{
+        text-align: justify;
+    }
   }
 
 @media only screen and (max-width: 400px) {  
@@ -382,5 +385,8 @@ footer{
     li{
 
         font-size: 0.7em;        
+    }
+    .about-text{
+        text-align: justify;
     }
   }
